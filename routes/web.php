@@ -6,8 +6,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/dash', function () {
-    return response()->json([
+    return [
         'message' => 'Welcome to the dashboard',
         'status' => 'success'
-    ]);
+    ];
 });
